@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFD6F5"
+    android:layout_marginBottom="10dp">
+
+    <!-- Название темы -->
+    <TextView
+        android:id="@+id/themeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Название темы"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#4A2E7A"
+        android:padding="4dp" />
+
+    <!-- Контейнер кнопок -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp">
+
+        <!-- Кнопка редактирования темы -->
+        <Button
+            android:id="@+id/btnEditTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Редактировать"
+            android:backgroundTint="#7B4BB7"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp" />
+
+        <!-- Отступ -->
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Кнопка тестов -->
+        <Button
+            android:id="@+id/btnTests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тесты"
+            android:backgroundTint="#4A2E7A"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <!-- Отступ -->
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Кнопка удаления -->
+        <Button
+            android:id="@+id/btnDeleteTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удалить"
+            android:backgroundTint="#B00020"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

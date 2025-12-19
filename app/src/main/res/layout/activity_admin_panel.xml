@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Панель администратора"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Кнопка Пользователи -->
+    <Button
+        android:id="@+id/btn_admin_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Пользователи"
+        android:background="@drawable/bg_theme_card"
+        android:textColor="@color/black"
+        android:paddingVertical="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Кнопка Темы -->
+    <Button
+        android:id="@+id/btn_admin_themes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Темы"
+        android:background="@drawable/bg_theme_card"
+        android:textColor="@color/black"
+        android:paddingVertical="12dp"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Кнопка Добавить тему (справа) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btn_admin_add_theme"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Добавить тему"
+            android:background="@drawable/bg_button_secondary"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawablePadding="8dp"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="10dp"/>
+    </LinearLayout>
+
+    <!-- Красная кнопка выхода -->
+    <Button
+        android:id="@+id/btn_admin_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выйти"
+        android:textColor="@color/white"
+        android:backgroundTint="#D9534F"
+        android:paddingHorizontal="36dp"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="40dp"/>
+
+</LinearLayout>

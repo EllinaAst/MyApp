@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg_color">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="start"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"/>
+
+
+        <ImageView
+            android:id="@+id/userAvatar"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/avatar_bg"
+            android:clipToOutline="true"/>
+
+        <Button
+            android:id="@+id/deleteAvatarBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Удалить аватар"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FF5555"
+            android:textColor="@android:color/white"/>
+
+
+        <!-- Стрелка назад -->
+
+        <!-- Имя -->
+        <EditText
+            android:id="@+id/firstnameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Имя"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp" />
+
+        <!-- Фамилия -->
+        <EditText
+            android:id="@+id/lastnameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Фамилия"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp" />
+
+        <!-- Email (нельзя менять) -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:enabled="false"
+            android:focusable="false"
+            android:alpha="0.6"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email нельзя изменить"
+            android:textColor="@color/black"
+            android:alpha="0.6"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Новый пароль -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Новый пароль (необязательно)"
+            android:background="@drawable/rounded_input"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Сохранить изменения -->
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сохранить изменения"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Выйти из аккаунта -->
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выйти из аккаунта"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@android:color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

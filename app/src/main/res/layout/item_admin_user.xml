@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Имя Фамилия"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/itemUserRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Роль: user"
+                android:textSize="14sp"
+                android:textColor="#555" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/itemUserViewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFF"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

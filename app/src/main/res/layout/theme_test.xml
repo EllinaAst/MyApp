@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy_blue_background">
+
+    <!-- Заголовок с кнопкой назад (как в других активити) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/navy_blue_background"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Кнопка назад -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="16dp"
+            android:contentDescription="Назад"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Название темы по центру -->
+        <TextView
+            android:id="@+id/themeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тестирование"
+            android:textColor="@color/header_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Основное содержимое -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Прогресс "Задание X из Y" -->
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Задание 1 из 5"
+            android:textSize="14sp"
+            android:textColor="@color/header_text_color"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Вопрос -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вопрос"
+                android:textSize="18sp"
+                android:textColor="@color/card_text_color"
+                android:padding="20dp"
+                android:lineSpacingExtra="4dp"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Варианты ответов -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="24dp">
+
+            <RadioGroup
+                android:id="@+id/rgAnswers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Вариант 1"
+                    android:textSize="16sp"
+                    android:textColor="@color/card_text_color"
+                    android:paddingVertical="12dp"
+                    android:layout_marginVertical="4dp" />
+
+                <!-- Разделитель - используем стандартный серый цвет -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginVertical="4dp" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Вариант 2"
+                    android:textSize="16sp"
+                    android:textColor="@color/card_text_color"
+                    android:paddingVertical="12dp"
+                    android:layout_marginVertical="4dp" />
+
+                <!-- Разделитель -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginVertical="4dp" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Вариант 3"
+                    android:textSize="16sp"
+                    android:textColor="@color/card_text_color"
+                    android:paddingVertical="12dp"
+                    android:layout_marginVertical="4dp" />
+
+                <!-- Разделитель -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E0E0E0"
+                    android:layout_marginVertical="4dp" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Вариант 4"
+                    android:textSize="16sp"
+                    android:textColor="@color/card_text_color"
+                    android:paddingVertical="12dp"
+                    android:layout_marginVertical="4dp" />
+
+            </RadioGroup>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Пространство для отступа -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Кнопка далее/завершить -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Далее"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_gradient"
+            android:elevation="8dp"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AuthDemo</string>
+    <string name="login">Войти</string>
+    <string name="register">Регистрация</string>
+</resources>

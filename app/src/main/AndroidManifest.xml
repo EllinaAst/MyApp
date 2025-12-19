@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Разрешения -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <!-- Стартовая активность -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- ЭКРАН ВЫБОРА ТЕМ -->
+        <activity android:name=".ThemeSelectionActivity" />
+
+        <activity android:name=".LoginActivity" android:exported="false" />
+        <activity android:name=".RegisterActivity" android:exported="false" />
+
+        <activity android:name=".Theme2Activity" android:exported="false" />
+        <activity android:name=".TestActivity" android:exported="false" />
+        <activity android:name=".ProfileActivity" />
+
+        <activity android:name=".AdminPanelActivity" android:exported="false"/>
+        <activity android:name=".AdminUsersActivity" android:exported="false"/>
+        <activity android:name=".AdminThemesActivity" android:exported="false"/>
+        <activity android:name=".AdminEditThemeActivity" android:exported="false"/>
+        <activity android:name=".AdminCreateThemeActivity" android:exported="false"/>
+
+        <activity android:name=".AdminTestsActivity" />
+        <activity
+            android:name=".AdminEditQuestionActivity"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+
+        <activity android:name=".ThemeTestActivity" />
+
+        <activity android:name=".Theme1Activity"/>
+
+
+    </application>
+
+</manifest>

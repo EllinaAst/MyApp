@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Цвета из изображения (первый набор) -->
+    <color name="bg_white">#FFFFFF</color>
+    <color name="purple_dark">#3B238F</color>
+    <color name="purple_700_from_image">#6B4AE6</color> <!-- Переименован для избежания конфликта с другим purple_700 -->
+    <color name="purple_900">#4B2FB3</color>
+
+    <color name="purple_btn">#6A4DBA</color>
+    <color name="header_color">#4A2C91</color>
+    <color name="light_gray_background">#F5F5F5</color>
+    <color name="primaryColor">#2196F3</color>
+
+    <!-- Цвета из предоставленного фрагмента (второй набор) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="main_bg_color">#ffd1f3</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color> <!-- Этот purple_700 используется в темах по умолчанию -->
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color> <!-- Есть также bg_white, оба одинаковые по значению -->
+
+    <!-- Кастомные цвета для дизайна -->
+    <color name="navy_blue_background">#1A1F3C</color>
+    <color name="header_text_color">#adadad</color> <!-- Светло-серый для заголовка -->
+    <color name="card_text_color">#333333</color> <!-- Темно-серый для текста в карточке -->
+
+    <!-- Градиент для кнопки "Далее" -->
+    <color name="button_gradient_start">#9B59B6</color>
+    <color name="button_gradient_end">#8E44AD</color>
+
+    <color name="out">#d62e6c</color>
+
+</resources>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/adminCreateThemeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/purple_700"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Создать тему"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back" />
+
+    <!-- Основная часть -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg_color">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/createThemeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Название темы"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/createThemeTheory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Теория"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/createThemeExamples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Примеры"
+                android:layout_marginBottom="24dp" />
+
+          <!-- кнопка "Создать тесты" — поместите под кнопкой "Создать тему" -->
+            <Button
+                android:id="@+id/btnCreateTests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Создать тесты"
+                android:backgroundTint="@color/purple_700"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

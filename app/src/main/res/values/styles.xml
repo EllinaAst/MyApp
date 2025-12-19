@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.AuthDemo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_700</item>
+        <item name="colorPrimaryVariant">@color/purple_900</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:statusBarColor">@color/purple_900</item>
+    </style>
+</resources>
