@@ -55,36 +55,64 @@ JDK 11+
 Основные пакеты и классы
 text
 com.example.myapplication/
+
 ├── Активности (Activities)/
+
 │   ├── WelcomeActivity.java          # Стартовый экран
+
 │   ├── LoginActivity.java            # Вход в систему
+
 │   ├── RegisterActivity.java         # Регистрация
+
 │   ├── ProfileActivity.java          # Профиль пользователя
+
 │   ├── ThemeSelectionActivity.java   # Экран выбора темы
+
 │   ├── Theme1Activity.java           # Теория
+
 │   ├── Theme2Activity.java           # Примеры
+
 │   ├── ThemeTestActivity.java        # Тестирование по теме
+
 │   ├── AdminPanelActivity.java       # Панель администратора
+
 │   ├── AdminThemesActivity.java      # Управление темами (админ)
+
 │   ├── AdminTestsActivity.java       # Управление тестами (админ)
+
 │   ├── AdminUsersActivity.java       # Управление пользователями (админ)
+
 │   ├── AdminCreateThemeActivity.java # Создание темы (админ)
+
 │   ├── AdminEditThemeActivity.java   # Редактирование темы (админ)
+
 │   └── AdminEditQuestionActivity.java# Редактирование вопросов (админ)
+
 │
 ├── Адаптеры (Adapters)/
+
 │   ├── UserThemesAdapter.java        # Адаптер тем пользователя
+
 │   ├── AdminThemesAdapter.java       # Адаптер тем для админа
+
 │   ├── AdminTestsAdapter.java        # Адаптер тестов для админа
+
 │   └── AdminTestsRecyclerAdapter.java# RecyclerView адаптер тестов
+
 │
+
 └── Модели данных (Models)/
+
     ├── User.java                     # Модель пользователя
+    
     ├── Theme.java                    # Модель темы
+    
     ├── ThemeItem.java                # Элемент темы
+    
     └── TestQuestion.java             # Вопрос теста
+    
 Архитектурная схема
-text
+
 ┌─────────────────────────────────────────────────┐
 │          Android Application Layer              │
 │  com.example.myapplication                      │
