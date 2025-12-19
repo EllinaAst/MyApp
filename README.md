@@ -113,24 +113,19 @@ com.example.myapplication/
     
 Архитектурная схема
 
-┌─────────────────────────────────────────────────┐
-│          Android Application Layer              │
-│  com.example.myapplication                      │
-├─────────────────────────────────────────────────┤
-│  • Activities (Представление)                   │
-│  • Adapters (Адаптеры списков)                  │
-│  • Models (Модели данных)                       │
-└───────────────────┬─────────────────────────────┘
-                    │
-                    │ Firebase SDK
-                    ▼
-┌─────────────────────────────────────────────────┐
-│            Firebase Services                     │
-├─────────────────────────────────────────────────┤
-│  • Authentication    - Вход/регистрация         │
-│  • Cloud Firestore   - База данных              │
-│
-└─────────────────────────────────────────────────┘
+Android Application Layer  com.example.myapplication 
+            |
+• Activities (Представление)         
+• Adapters (Адаптеры списков)             
+ • Models (Модели данных)  
+             |
+             │ Firebase SDK
+             ▼
+           Firebase Services  
+ • Authentication    - Вход/регистрация 
+ • Cloud Firestore   - База данных
+
+
 Схема навигации пользователя
 text
 WelcomeActivity (Стартовый экран)
